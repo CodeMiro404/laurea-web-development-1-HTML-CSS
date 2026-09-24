@@ -3,17 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <title>My favourite Dinosaur</title>
+
+        <script src="javascript.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
-        <h1>Spinosaurus</h1>
+        <h1 id="dinoTitle">Spinosaurus</h1>
         
-        <p>Spinosaurus is my favourite Dinosaur now and maybe later</p>
-
-        <a href="https://en.wikipedia.org/wiki/Spinosaurus" target="_blank">
-            More about Spinosaurus!
-        </a>
+        <p>Hello, My name is Miro and this is my webpage about web development and dinosaurs!</p>
 
         <img src="img/Spinosaurus_aegyptiacus_by_PaleoGeek.png" alt="Spinosaurus">
+
+        <!-- When the user clicks a button, show a message about Spinosaurus   -->
+        <p><button id="dinoButton">Click for Spinosaurus </button></p>
+
+        <!-- The input event happens everytime the value changes-->
+         
+        <h2>Choose another dinosaur</h2>
+
+        <!--input id="dinoInput" type="text" placeholder="Type a dinosaur name here"-->
+
+        <!-- Form for submitting dinosaur name -->
+        <form id="dinoForm">
+            <label for="dinoInput">Type a dinosaur name here:</label>
+            <input id="dinoInput" type="text" placeholder="Type a dinosaur name here">
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+
+        <p id="dinoOutput"></p>
+
+         <a href="https://en.wikipedia.org/wiki/Spinosaurus" target="_blank">
+            More about Spinosaurus!
+        </a>
 
     </body>
 </html>
